@@ -352,6 +352,9 @@ main()"
 ;; Instead of M-g g
 (global-set-key [?\M-\C-g] 'goto-line)
 
+;; <SPACE> Taste 
+(global-unset-key [spc])
+
 ;; tabbar: goto next/previous tab
 (global-set-key [C-prior] 'tabbar-backward)
 (global-set-key [C-next] 'tabbar-forward)
@@ -410,7 +413,7 @@ main()"
 (setq save-abbrevs t)
 
 ;; Alt-space is dabbrev-expand
-(global-set-key " " (quote dabbrev-expand))
+;;;(global-set-key " " (quote dabbrev-expand))
 
 ;; C-y is redo
 (global-set-key [?\C-y] (quote redo))
@@ -597,6 +600,5 @@ main()"
 ;;(pymacs-load "paste")
 ; um das Menü zu aktivieren
 ;;(paste-menu)
- 
-
+;;
 
